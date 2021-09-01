@@ -115,7 +115,7 @@ a{
 }
 .final-sec{
     width:100%;
-    height: 44vh;
+    height: fit-content;
     background-color: rgb(31,133,143);
     position: relative;
     top: -120px;
@@ -136,20 +136,22 @@ a{
     justify-content: center;
     margin-bottom: 20px;
     border-right: #8ec2c7 3px solid;
-    
+    position: relative;
 }
 .rad{
     width:40%;
     display:flex;
     justify-content:center;
+    position: relative;
+    overflow: hidden;
 }
 .iadd{
     position:relative;
-    left: 150px;
+    right: 25px;
 }
 .iad2{
     position:relative;
-    right: 50px;
+    left: 10px;
 }
 .tadd{
     text-align: center;
@@ -204,7 +206,7 @@ a{
 .final-sec-mob{
     display: none;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 810px){
     .header{
         display: none;
     }
@@ -285,6 +287,7 @@ a{
         
         flex-direction: column;
         justify-content: center;  
+        align-content:center;
     }
     .lad{
         display: none;
@@ -335,10 +338,17 @@ a{
         left: -10px;
         
     }
+    .uad img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .btn-r{
         margin-top: 40px;
+        width: fit-content;
         position: relative;
-        left: 70px;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 2px;
@@ -348,7 +358,8 @@ a{
     }
     .dad img{
         position: relative;
-        left: 50px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .bt2{
         color: rgb(254,244,244);
@@ -364,7 +375,8 @@ a{
         width: 154px;
         height: 35px;
         position: relative;
-        left: 150px;
+        left: 50%;
+        transform: translateX(-50%);
         border-radius: 20px;
     }
     .end{
